@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Page Title -->
+    <title>TrackInc - IT Project Tracking Dashboard</title>
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="TrackInc is an intuitive IT project tracking dashboard that helps you manage your software development projects, monitor progress, and collaborate with teams in real-time."
+    />
+
+    <!-- Meta Keywords (Optional, helps with SEO) -->
+    <meta
+      name="keywords"
+      content="IT project tracking, project management, software development, project dashboard, real-time tracking, team collaboration"
+    />
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta
+      property="og:title"
+      content="TrackInc - IT Project Tracking Dashboard"
+    />
+    <meta
+      property="og:description"
+      content="TrackInc provides an advanced project tracking solution for IT professionals, offering real-time project updates, milestones, and team collaboration tools."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>TrackInc - Dashboard</title>
+  </head>
+  <body>
+    <!-- Layout Container -->
+    <div class="layout">
+      <!-- Aside Header -->
+      <div class="bg-overlay hidden"></div>
+      <aside>
+        <header class="aside-header" aria-label="main-navigation">
+          <div class="header-container">
+            <div class="header-brand">
+              <a href="index.html">
+                <img src="./assets/png/Logo.png" alt="TrackInc" />
+              </a>
+            </div>
+
+            <nav aria-label="sidebar-navigation">
+              <div class="nav-container">
+                <!-- Navigation List  -->
+                <ul class="navigation-list">
+                  <li class="nav-item">
+                    <a
+                      href="#"
+                      class="nav-link active-link"
+                      aria-current="page"
+                    >
+                      <img
+                        src="./assets/png/dashboard-on.png"
+                        alt="dashboard-off"
+                      />
+                      Dashboard
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="./assets/png/invoice-off.png"
+                        alt="Invoice-icon"
+                      />
+                      Invoices
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="./assets/png/proposals-off.png"
+                        alt="proposals"
+                      />
+                      Proposals
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="./assets/png/services-off.png"
+                        alt="services-off"
+                      />
+                      Services
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="./assets/png/transactis-off.png"
+                        alt="transactions-off"
+                      />
+                      Transaction
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="./assets/png/projects-off.png"
+                        alt="projects-off"
+                      />
+                      Projects
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      <img
+                        src="./assets/png/customers-off.png"
+                        alt="customers"
+                      />
+                      Customers
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+            <!-- Bottom Setting Wrapper -->
+            <div class="header-bottom">
+              <a href="#" class="nav-link">
+                <img src="./assets/png/settings-off.png" alt="settings-off" />
+                Settings
+              </a>
+              <a href="#" class="nav-link">
+                <img src="./assets/png/logout-off.png" alt="logout-off" />
+                Log out
+              </a>
+            </div>
+          </div>
+        </header>
+      </aside>
+      <!-- Main content -->
+      <main class="dashboard-main">
+        <div class="dashboard-top">
+          <header class="dashboard-header">
+            <div>
+              <button class="toggle-aside-btn">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <p class="user-greeting">
+                Hi, Welcome back <span class="user-name-text">Robert!</span>
+              </p>
+            </div>
+
+            <div class="header-tools">
+              <div class="searchbar-container">
+                <form action="#">
+                  <input
+                    type="search"
+                    name="searchbar"
+                    id="searchbar"
+                    placeholder="Search..."
+                  />
+                  <img
+                    src="./assets/png/search.png"
+                    alt="search"
+                    class="search-icon"
+                  />
+                </form>
+              </div>
+
+              <div class="notifications-container">
+                <button class="popup-notification-btn btn-popup">
+                  <img
+                    src="./assets/png/notifications.png"
+                    alt="notifications"
+                  />
+                  <span class="notifications-indicator"></span>
+                </button>
+
+                <div class="notification-dropdown">
+                  <p class="dropdown-title">Notification</p>
+
+                  <div class="notification-list">
+                    <div class="notification-item">
+                      <img src="./assets/img/Ellipse 3.png" alt="avatar" />
+
+                      <div class="notification-overview">
+                        <p class="text-bold">Way to go Alex! 🎉</p>
+                        <p class="notification-text">
+                          Congratulations on snagging the movement
+                        </p>
+                        <p class="notification-time">2 Min Ago</p>
+                      </div>
+                    </div>
+
+                    <div class="notification-item">
+                      <img src="./assets/img/Ellipse 3.png" alt="avatar" />
+
+                      <div class="notification-overview">
+                        <p class="text-bold">Way to go Alex! 🎉</p>
+                        <p class="notification-text">
+                          Congratulations on snagging the movement
+                        </p>
+                        <p class="notification-time">2 Min Ago</p>
+                      </div>
+                    </div>
+
+                    <div class="notification-item">
+                      <img src="./assets/img/Ellipse 3.png" alt="avatar" />
+
+                      <div class="notification-overview">
+                        <p class="text-bold">Way to go Alex! 🎉</p>
+                        <p class="notification-text">
+                          Congratulations on snagging the movement
+                        </p>
+                        <p class="notification-time">2 Min Ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="view-all">View All</a>
+                </div>
+              </div>
+
+              <div class="profile-btn-wrap">
+                <button class="profile-popup-btn btn-popup">
+                  <img
+                    src="./assets/img/user-profilepic.png"
+                    alt="user-profile"
+                  />
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- Finance Overview Wrapper -->
+          <div class="finance-overview-container">
+            <h1 class="finance-heading">Finance Overview</h1>
+
+            <div class="finance-cards-wrapper">
+              <div class="finance-card finance-card--sales">
+                <p class="finance-card__amount">
+                  $ <span class="finance-card__value">2,77,120</span>
+                </p>
+                <p class="finance-card__type">Sales</p>
+              </div>
+
+              <div class="finance-card finance-card--expense">
+                <p class="finance-card__amount">
+                  $ <span class="finance-card__value">60,100</span>
+                </p>
+                <p class="finance-card__type">Expense</p>
+              </div>
+
+              <div class="finance-card finance-card--profit">
+                <p class="finance-card__amount">
+                  $ <span class="finance-card__value">57,230</span>
+                </p>
+                <p class="finance-card__type">Profit</p>
+              </div>
+
+              <div class="finance-card finance-card--income">
+                <p class="finance-card__amount">
+                  $ <span class="finance-card__value">1,60,124</span>
+                </p>
+                <p class="finance-card__type">Income</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- content -->
+
+        <section class="project-overview-section">
+          <div class="project-overview--container">
+            <div class="project-overview--top">
+              <h2 class="wrapper-title"><em> Current Projects</em></h2>
+              <button class="create-btn">Create</button>
+            </div>
+
+            <div class="overview-table--container">
+              <table class="project-table nowrap">
+                <thead class="project-table--head">
+                  <tr>
+                    <th>Project Name</th>
+                    <th>Customer</th>
+                    <th>Sent Date</th>
+                    <th>Amount</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="project-table--body"></tbody>
+              </table>
+            </div>
+          </div>
+          <!-- Dashboard Bottom -->
+
+          <div class="events-section">
+            <h2 class="wrapper-title"><em> Events </em></h2>
+
+            <div class="event-list-container">
+              <!-- Event-list -->
+              <div class="event-list">
+                <div class="event-item">
+                  <div class="event-item--header">
+                    <img
+                      src="./assets/img/Ellipse 45.png"
+                      alt="avatar"
+                      class="event-item--avatar"
+                    />
+
+                    <div class="event-item--details">
+                      <p class="event-author">Wade Waren</p>
+
+                      <div class="even-item--meta">
+                        <p class="event-label today-event">🎂 Birthday</p>
+
+                        <span class="dot"></span>
+
+                        <p class="event-timestamp">Today</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="event-item--cta">
+                    <p class="event-message">Wish</p>
+                  </div>
+                </div>
+
+                <div class="event-item">
+                  <div class="event-item--header">
+                    <img
+                      src="./assets/img/Ellipse 3.png"
+                      alt="avatar"
+                      class="event-item--avatar"
+                    />
+
+                    <div class="event-item--details">
+                      <p class="event-author">Wade Waren</p>
+
+                      <div class="even-item--meta">
+                        <p class="event-label today-event">🎉 Joining Us</p>
+
+                        <span class="dot"></span>
+
+                        <p class="event-timestamp">Today</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="event-item--cta">
+                    <p class="event-message">Congratulations</p>
+                  </div>
+                </div>
+
+                <div class="event-item">
+                  <div class="event-item--header">
+                    <img
+                      src="./assets/img/Ellipse 46.png"
+                      alt="avatar"
+                      class="event-item--avatar"
+                    />
+
+                    <div class="event-item--details">
+                      <p class="event-author">Wade Waren</p>
+
+                      <div class="even-item--meta">
+                        <p class="event-label">💼 Work Anniversary</p>
+
+                        <span class="dot"></span>
+
+                        <p class="event-timestamp">7 September 2022</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="event-item--cta">
+                    <p class="event-message hidden"></p>
+                  </div>
+                </div>
+
+                <div class="event-item">
+                  <div class="event-item--header">
+                    <img
+                      src="./assets/img/Ellipse 45.png"
+                      alt="avatar"
+                      class="event-item--avatar"
+                    />
+
+                    <div class="event-item--details">
+                      <p class="event-author">Wade Waren</p>
+
+                      <div class="even-item--meta">
+                        <p class="event-label">🎂 Birthday</p>
+
+                        <span class="dot"></span>
+
+                        <p class="event-timestamp">Today</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="event-item--cta">
+                    <p class="event-message hidden"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
