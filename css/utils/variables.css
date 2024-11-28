@@ -1,0 +1,62 @@
+:root {
+  --header-brand-border: #e4e7ed;
+  --main-top-bg: #121e48;
+  --accent-color: #1cd2ad;
+  --red-warn: #ec4a4a;
+  --body-bg: #f3f3f3;
+
+  --table-head-font: #12141d;
+  --table-body-font: #8e90a6;
+  --nav-font-clr: #767676;
+
+  --sent-bg: #e5f7fb;
+  --sent-font-clr: #18c3d9;
+  --reject-bg: #fedbdb;
+  --reject-font-clr: #ec4a4a;
+  --draft-bg: #aaaaaa33;
+  --draft-font-clr: #aaaaaa;
+  --paid-bg: #1cd2ad33;
+  --paid-font-clr: #1cd2ad;
+}
+
+/* Regular weight */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* Bold weight */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+/* Medium style */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+/* Black weight */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy/Gilroy-Black.ttf") format("truetype");
+  font-weight: 800;
+}
+
+/* Semibold weight */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+/* Light style */
+@font-face {
+  font-family: "Gilroy";
+  src: url("../../assets/fonts/Gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: 300;
+}
