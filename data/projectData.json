@@ -1,0 +1,51 @@
+[
+  {
+    "projectName": "Travel app design",
+    "customerName": "Jacob Jones",
+    "sentDate": "28 Oct 2022",
+    "amount": "240.89",
+    "status": "sent"
+  },
+  {
+    "projectName": "UX Research for Event management app",
+    "customerName": "Wade Waren",
+    "sentDate": "18 Oct 2022",
+    "amount": "120.00",
+    "status": "draft"
+  },
+  {
+    "projectName": "Redesign - Food delivery app",
+    "customerName": "Annette Black",
+    "sentDate": "15 Oct 2022",
+    "amount": "351.0",
+    "status": "paid"
+  },
+  {
+    "projectName": "Web App - Online Learning",
+    "customerName": "Cameron Williamson",
+    "sentDate": "15 Oct 2022",
+    "amount": "240.90",
+    "status": "paid"
+  },
+  {
+    "projectName": "Railway web casestudy",
+    "customerName": "Robert Fox",
+    "sentDate": "13 Oct 2022",
+    "amount": "153.40",
+    "status": "sent"
+  },
+  {
+    "projectName": "Responsive web design",
+    "customerName": "Floyd Miles",
+    "sentDate": "06 Oct 2022",
+    "amount": "140.90",
+    "status": "rejected"
+  },
+  {
+    "projectName": "Music app design",
+    "customerName": "Theresa Webb",
+    "sentDate": "04 Oct 2022",
+    "amount": "345.89",
+    "status": "draft"
+  }
+]
