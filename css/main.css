@@ -1,0 +1,48 @@
+@import url("./utils/variables.css");
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background-color: var(--body-bg);
+}
+
+.layout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.dashboard-main {
+  margin-inline-start: 300px;
+  width: 100%;
+}
+
+.toggle-aside-btn {
+  position: absolute;
+  left: 13px;
+  top: 33px;
+  z-index: 10;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .toggle-aside-btn {
+    display: block;
+  }
+
+  .dashboard-main {
+    margin-inline-start: 0;
+  }
+}
