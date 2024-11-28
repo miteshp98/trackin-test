@@ -1,0 +1,122 @@
+aside {
+  grid-area: header;
+  overflow: hidden;
+}
+
+.aside-header {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  max-width: 300px;
+
+  z-index: 11;
+  background-color: white;
+}
+
+.header-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.header-brand {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--header-brand-border);
+}
+
+nav {
+  margin-top: 4rem;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  padding-inline: 10px;
+
+  .nav-link {
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: var(--nav-font-clr);
+
+    img {
+      width: 24px;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+      background-color: rgba(28, 210, 173, 0.1);
+    }
+  }
+
+  .active-link {
+    color: var(--accent-color);
+    background-color: rgba(28, 210, 173, 0.1);
+  }
+}
+
+.header-bottom {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding: 1rem;
+  border-top: 1px solid var(--header-brand-border);
+  padding-inline: 10px;
+
+  a {
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 24px;
+    font-weight: 500;
+    color: var(--nav-font-clr);
+    text-decoration: none;
+
+    img {
+      width: 24px;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+      background-color: rgba(28, 210, 173, 0.1);
+    }
+  }
+}
+
+.bg-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1250px) {
+  .aside-header {
+    left: -300px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .toggle-aside {
+    left: 0;
+  }
+}

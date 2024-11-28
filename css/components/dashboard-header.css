@@ -1,0 +1,139 @@
+.dashboard-top {
+  max-height: 230px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 0px 0px;
+
+  grid-area: dashboard-top;
+  background-color: var(--main-top-bg);
+}
+
+.dashboard-header {
+  padding: 2rem 2rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-greeting {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+
+  .user-name-text {
+    color: var(--accent-color);
+  }
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.searchbar-container {
+  position: relative;
+
+  input {
+    width: 215px;
+    height: 40px;
+    padding-inline: 38px 15px;
+    padding-block: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+
+    &::placeholder {
+      color: white;
+    }
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  width: 18px;
+  filter: brightness(100);
+}
+
+.btn-popup {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications-container {
+  position: relative;
+}
+
+.popup-notification-btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  img {
+    width: 24px;
+    filter: brightness(100);
+  }
+}
+
+.notifications-indicator {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--red-warn);
+  top: 0;
+  right: 0;
+  border: 2px solid var(--main-top-bg);
+}
+
+.profile-btn-wrap {
+  width: 50px;
+  height: 40px;
+}
+
+.profile-popup-btn {
+  background-color: transparent;
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .dashboard-header {
+    padding-inline: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .dashboard-top {
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .dashboard-top {
+    max-height: 250px;
+  }
+
+  .searchbar-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  
+}
