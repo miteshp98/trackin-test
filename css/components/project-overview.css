@@ -179,3 +179,9 @@
     padding-block: 32.5rem 2rem;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .project-overview-section {
+    padding-block: 33rem 2rem;
+  }
+}
