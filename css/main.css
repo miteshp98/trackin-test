@@ -19,6 +19,7 @@ body {
 .btn-wrap {
   width: 40px;
   height: 40px;
+  display: none;
 }
 
 .toggle-aside-btn {
@@ -32,12 +33,12 @@ body {
   font-size: 1.3em;
   color: white;
   cursor: pointer;
-  display: none;
+  display: flex;
 }
 
 @media screen and (max-width: 1250px) {
-  .toggle-aside-btn {
-    display: flex;
+  .btn-wrap {
+    display: block;
   }
 
   .dashboard-main {

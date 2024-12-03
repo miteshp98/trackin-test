@@ -1,6 +1,7 @@
 class DashboardManager {
   _dashboardHeader = document.querySelector(".dashboard-header");
   _body = document.querySelector("body");
+
   constructor() {
     this.handleNotificationCTA();
     this.handleNavLinks();
